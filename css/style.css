@@ -1,0 +1,171 @@
+body {
+  background: black;
+}
+#main {
+display: none;
+  font-family: helvetica;
+ background: url('https://f4.bcbits.com/img/0005990507_10.jpg') center no-repeat;
+  background-size: contain;
+  height: 100vh;
+  background-color: black;
+}
+#title {
+  font-weight: 900;
+  color: red;
+  background: none;
+  font-size: 12vw;
+  text-align: center;
+  margin-top:30vh;
+transition: 2s;
+}
+
+#nav {
+  top: 0;
+  left: 0;
+  right: 25px;
+  z-index: 1;
+ width: 0;
+  position: fixed;
+  height: 100%;
+padding-top:75px;
+  background: black;
+  overflow-x: hidden;
+ transition: 1s; 
+  color: red;
+}
+h1, h2 {
+  font-size: 12vw;
+  text-align: center;
+  font-weight: 900;
+  color: red;
+font-size: 3vw;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+}
+h1 {
+  margin-top: 10vh;
+  font-size: 8vw;
+}
+.navLink {
+  font-size: 6vw;
+color: red;
+  font-weight: 900;
+  padding: 30px;
+  display: block;
+}
+.navLink:first-child {
+  padding-top: 20px;
+}
+.navLink:hover{
+  transition: 1s;
+  color: white;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white
+}
+#closeNav {
+  font-size:30px;
+  top: 0;
+  color: red;
+  margin-left:90vw;
+}
+#closeNav:hover {
+  transition: 1s;
+  color: white;
+}
+#open {
+  cursor: pointer;
+   transition: 5s;
+    margin-left:0;
+    padding-left: 10px;
+ padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+margin-top: 15px;
+position: fixed;
+  z-index: 99;
+}
+#icon {
+  background: transparent;
+  height: 10vw;
+  display: none;
+  transition: 2s;
+}
+#icon:hover {
+ 
+  transform: rotate(72deg);
+}
+.row {
+  height: 100vh;
+}
+#tourDates {
+  margin-top: 250px
+}
+#tour li {
+color: red;
+  text-align: center;
+  padding-bottom: 4px;
+  font-size: 20px;
+  font-weight: 900;
+}
+#tour {
+ padding-top: 25px;
+  list-style-type: none;
+  width: 100%;
+  margin: 0 auto;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.flip-container {
+  perspective: 100vh;
+
+	display: inline-block;
+}
+
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 500px;
+  height: 500px;
+}
+.album-art {
+  width: 500px;
+  height: 500px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.front {
+	z-index: 2;
+background: white;
+  cursor: pointer;
+  -webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.back {
+  background: black;
+border: 5px solid red;
+	transform: rotateY(180deg);
+}
